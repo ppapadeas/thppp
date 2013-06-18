@@ -10,7 +10,7 @@ define(function(require) {
 
     var loader = require('game/loader');
     loader.register('balls','img/balls.png', 'image');
-    loader.register('player','img/player.png', 'image');
+    loader.register('player','img/player1.png', 'image');
     loader.register('ground','img/ground.png', 'image');
 
     function rgba_glow(r, g, b, a_base, a_vary, glow) {

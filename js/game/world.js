@@ -5,7 +5,7 @@ define(function(require) {
     var TiledGraphic = require('flux/graphics/tiled');
 
     var loader = require('game/loader');
-    loader.register('stage_music', 'audio/show_no_tears.ogg', 'audio');
+    loader.register('stage_music', 'audio/Funny_Bunnies.ogg', 'audio');
     loader.register('ball_sound', 'audio/st2_die.ogg', 'audio');
 
     var SHOW_MATCH_LENGTH = 32;
@@ -40,7 +40,7 @@ define(function(require) {
         }
 
         this.music = new Sound(loader.get('stage_music'));
-        this.music.audio.volume = 0.1; // wtf I hate volume control
+        this.music.audio.volume = 0.6; // wtf I hate volume control
         this.running = false;
 
         this.ball_sound = new Sound(loader.get('ball_sound'));
@@ -224,7 +224,7 @@ define(function(require) {
         // Draw gameover if they lost
         if (this.gameOver) {
             ctx.strokeStyle = "white";
-            ctx.strokeText("Game Over!", 20,20);
+            ctx.strokeText("Δεν πρόλαβε το φοτς!", 20,20);
         }
     };
 
